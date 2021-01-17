@@ -28,8 +28,8 @@ Edad Hija
 //console.log("hola otra vez");
 
 function determinar(){
-	var x=3*y;
-	var y=s;
+	var x=h;
+	var y*=3*x;
 	s=document.getElementById("s").value;
 	h=document.getElementById("h").value;
 	x=document.getElementById("x").value;
