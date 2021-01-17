@@ -2,6 +2,7 @@
 <h1><center>Ejercicio 1</center></h1>
 	<br>
 	<h2><center>Un estanque circular de 6m de radio está rodeado por un sendero de 1m de anchura. Halla el área del sendero</center><h2>
+	<center><image src="Fuente 1 metro.png" height="500px" Width="800px"></center>
 
 <form>
 	<input name="Radio estanque" id="e" value="6" placeholder="Estanque" onkeyup="determinar()"/> 
@@ -9,11 +10,6 @@
 <button onclick="calcular()">
 Calcular</button>
 </form>
-<form name="formulario" onsubmit="return procesar(this);">         
-        Ingrese la funcion:
-        <input name="func" type="text" size="15" />           
-        <input type="submit" value="Procesar" />   
-    </form>
 
 <div id="a" style="
 	padding:20px;

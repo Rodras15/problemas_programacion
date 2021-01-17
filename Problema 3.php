@@ -4,8 +4,8 @@
 	<h2><center>La edad de Sara es el triple que la de su hija. Dentro de 14 años será el doble. ¿Qué edades tienen Sara y su hija?</center><h2>
 
 <form>
-	<input name="Sara" id="s" value="3" placeholder="Madre(cuantas veces mas)" onkeyup="determinar()"/> 
-	<input name="hija"id="h" value="1" placeholder="Hija(x)" onkeyup="determinar()"/> 
+	<input name="Sara" id="s" value="3x" placeholder="Madre(cuantas veces mas)" onkeyup="determinar()"/> 
+	<input name="hija"id="h" value="x" placeholder="Hija(x)" onkeyup="determinar()"/> 
 <button onclick="calcular()">
 Calcular</button>
 </form>
@@ -28,7 +28,7 @@ Edad Hija
 //console.log("hola otra vez");
 
 function determinar(){
-	var x=14;
+	var x=3*y;
 	var y=s;
 	s=document.getElementById("s").value;
 	h=document.getElementById("h").value;
