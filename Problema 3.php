@@ -4,19 +4,21 @@
 	<h2><center>La edad de Sara es el triple que la de su hija. Dentro de 14 años será el doble. ¿Qué edades tienen Sara y su hija?</center><h2>
 
 <form>
-	<input name="Sara" id="s" value="3x" placeholder="Madre(cuantas veces mas)" onkeyup="determinar()"/> 
-	<input name="hija"id="h" value="x" placeholder="Hija(x)" onkeyup="determinar()"/> 
+		Introducir cuantas veces más años tiene la madre (3 veces más=3)
+	<input name="Sara" id="s" value="3" placeholder="Madre(cuantas veces mas)" onkeyup="determinar()"/> 
+		Introducir hija (siempre 1)
+	<input name="hija"id="h" value="1" placeholder="Hija(x)" onkeyup="determinar()"/> 
 <button onclick="calcular()">
 Calcular</button>
 </form>
 
-<div id="s" style="
+<div id="esara" style="
 	padding:20px;
 	background-color:grey
 ">
 Edad de Sara
 </div>
-<div id="h" style="
+<div id="ehija" style="
 	padding:20px;
 	background-color:grey
 ">
@@ -27,22 +29,20 @@ Edad Hija
 //alert("hola mundo");
 //console.log("hola otra vez");
 
-function determinar(){
-	var x=h;
-	var y*=3*x;
+function calcular(){
 	s=document.getElementById("s").value;
 	h=document.getElementById("h").value;
-	x=document.getElementById("x").value;
-	y=document.getElementById("y").value;
 	s=parseInt(s);
 	h=parseInt(h);
-	x=parseInt(x);
-	y=parseInt(y);
-	y=3*x;
-	x=14;
-	document.getElementById("s").innerHTML=s+" Años";
-	document.getElementById("h").innerHTML=h+" Años";
-} determinar();
+	ehija=parseInt(ehija);
+	esara=parseInt(esara);
+	y=h*14;
+	x=2*y+14;
+	esara=s*y;
+	ehija=y;
+	document.getElementById("esara").innerHTML=esara+" Años";
+	document.getElementById("ehija").innerHTML=ehija+" Años";
+} calcular();
 </script>
 
 
