@@ -26,7 +26,7 @@ function determinar(){
 	s=document.getElementById("s").value;
 	e=parseInt(e);
 	s=parseInt(s);
-	a= 3.141592*(((e+s)*(e+s))-(e*e))
+	a=Math.round( 3.141592*(((e+s)*(e+s))-(e*e)))
 	document.getElementById("a").innerHTML=a+" Metros cuadrados";
 } determinar();
 </script>

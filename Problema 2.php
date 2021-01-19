@@ -44,8 +44,8 @@ function determinar(){
 	m=parseInt(m);
 	tp=parseInt(tp);
 	c=parseInt(c);
-	c=3.141592*((f+j)*(f+j))-(f*f);
-	m=c/tp;
+	c=Math.round(3.141592*((f+j)*(f+j))-(f*f));
+	m=Math.round(c/tp);
 	document.getElementById("m").innerHTML=m+" Paquetes";
 	document.getElementById("c").innerHTML=c+" m2 de cesped";
 } determinar();
