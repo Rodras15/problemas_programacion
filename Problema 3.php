@@ -8,7 +8,7 @@
 	<input name="Sara" id="s" value="3" placeholder="Madre(cuantas veces mas)" onkeyup="determinar()"/> 
 		Introducir hija (siempre 1)
 	<input name="hija"id="h" value="1" placeholder="Hija(x)" onkeyup="determinar()"/> 
-<button onclick="calcular()">
+<button onclick="resolver()">
 Calcular</button>
 </form>
 
@@ -47,6 +47,14 @@ function calcular(){
 
 
 <?php
-if(isset($_GET)) print_r($_GET)
+if(isset($_GET['m'])){
+$e = $_GET['e'];
+$s = $_GET['s'];
+$e = $_GET['e'];
+$e = $_GET['e'];
+$e = $_GET['e'];
+$e = $_GET['e'];
+echo $Math.round(3.141592*((($e+$s)*($e+$s))-($e*$e)));
+}
 
 ?>

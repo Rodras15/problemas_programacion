@@ -6,7 +6,7 @@
 
 <form>
 	<input name="Area" id="area" value="8" placeholder="Area(cm2)" onkeyup="determinar()"/> 
-<button onclick="calcular()">
+<button onclick="resolver()">
 Calcular</button>
 </form>
 
@@ -29,13 +29,22 @@ function determinar(){
 	var y=16/x;
 	l=((x*x*x*x)+256)/x*x;
 	h=Math.round(Math.sqrt(l));
-	area=(x*y)/2
+	area=(x*y)/2;
 	document.getElementById("h").innerHTML=h+" centimetros";
 } determinar();
 </script>
 
 
 <?php
-if(isset($_GET)) print_r($_GET)
+if(isset($_GET['h'])){
+$e = $_GET['area'];
+$s = $_GET['x'];
+$s = $_GET['y'];
+$s = $_GET['l'];
+$s = $_GET['h'];
+echo (($x*$x*$x*$x)+256)/$x*$x;
+echo $Math.round($Math.sqrt(l));
+echo ($x*$y)/2;
+}
 
 ?>

@@ -12,7 +12,7 @@
 	<input name="Radio fuente" id="f" value="4" placeholder="Fuente" onkeyup="determinar()"/> 
 	<input name="Radio jardin"id="j" value="1" placeholder="Jardín" onkeyup="determinar()"/>
 	<input name="Tamaño de paquetes"id="tp" value="7" placeholder="Tamaño de paquetes" onkeyup="determinar()"/> 
-<button onclick="determinar()">
+<button onclick="resolver()">
 Calcular</button>
 </form>
 
@@ -36,9 +36,7 @@ Numero de paquetes
 function determinar(){
 	f=document.getElementById("f").value;
 	j=document.getElementById("j").value;
-	m=document.getElementById("m").value;
 	tp=document.getElementById("tp").value;
-	c=document.getElementById("c").value;
 	f=parseInt(f);
 	j=parseInt(j);
 	m=parseInt(m);
@@ -53,6 +51,14 @@ function determinar(){
 
 
 <?php
-if(isset($_GET)) print_r($_GET)
+if(isset($_GET['m'])){
+$f = $_GET['f'];
+$j = $_GET['j'];
+$tp = $_GET['tp'];
+$m = $_GET['m'];
+$c = $_GET['c'];
+echo $Math.round(3.141592*(($f+$j)*($f+$j))-($f*$f));
+echo $Math.round($c/$tp);
+}
 
 ?>

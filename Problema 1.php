@@ -7,8 +7,9 @@
 <form>
 	<input name="Radio estanque" id="e" value="6" placeholder="Estanque" onkeyup="determinar()"/> 
 	<input name="Radio sendero"id="s" value="1" placeholder="Sendero" onkeyup="determinar()"/> 
-<button onclick="calcular()">
-Calcular</button>
+<button onclick="determinar()">
+	Calcular
+</button>
 </form>
 
 <div id="a" style="
@@ -33,6 +34,10 @@ function determinar(){
 
 
 <?php
-if(isset($_GET)) print_r($_GET)
-
+if(isset($_GET['a'])){
+$e = $_GET['e'];
+$s = $_GET['s'];
+$a = $_GET['a'];
+echo $Math.round(3.141592*((($e+$s)*($e+$s))-($e*$e)));
+}
 ?>
